@@ -1,0 +1,19 @@
+object DM: TDM
+  Height = 480
+  Width = 640
+  object dbConexao: TZConnection
+    ControlsCodePage = cCP_UTF16
+    Catalog = ''
+    Properties.Strings = (
+      'RawStringEncoding=DB_CP')
+    Connected = True
+    HostName = 'Localhost'
+    Port = 3050
+    Database = 'C:\Bruno\Projetos\Curso\TreinoCurso1\VENDAS.FDB'
+    User = 'SYSDBA'
+    Password = 'kim12345'
+    Protocol = 'firebird'
+    Left = 288
+    Top = 184
+  end
+end

@@ -1,0 +1,9 @@
+inherited frmCadCategoria: TfrmCadCategoria
+  Caption = 'Cadastro de Categoria'
+  TextHeight = 15
+  inherited pnlRodape: TPanel
+    inherited DBNavigator1: TDBNavigator
+      Hints.Strings = ()
+    end
+  end
+end

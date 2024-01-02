@@ -1,0 +1,167 @@
+object frmCadHeranca: TfrmCadHeranca
+  Left = 0
+  Top = 0
+  Caption = 'Insira aqui o Titulo'
+  ClientHeight = 577
+  ClientWidth = 949
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OnCreate = FormCreate
+  TextHeight = 15
+  object pnlRodape: TPanel
+    Left = 0
+    Top = 520
+    Width = 949
+    Height = 57
+    Align = alBottom
+    TabOrder = 0
+    ExplicitTop = 519
+    ExplicitWidth = 938
+    DesignSize = (
+      949
+      57)
+    object btnFechar: TBitBtn
+      Left = 855
+      Top = 16
+      Width = 75
+      Height = 25
+      Anchors = [akTop, akRight]
+      Caption = '&Fechar'
+      TabOrder = 0
+      OnClick = btnFecharClick
+      ExplicitLeft = 848
+    end
+    object btnGravar: TBitBtn
+      Left = 271
+      Top = 16
+      Width = 75
+      Height = 25
+      Caption = '&Gravar'
+      TabOrder = 1
+      OnClick = btnGravarClick
+    end
+    object btnCancelar: TBitBtn
+      Left = 190
+      Top = 16
+      Width = 75
+      Height = 25
+      Caption = '&Cancelar'
+      TabOrder = 2
+      OnClick = btnCancelarClick
+    end
+    object btnNovo: TBitBtn
+      Left = 28
+      Top = 16
+      Width = 75
+      Height = 25
+      Caption = '&Novo'
+      TabOrder = 3
+      OnClick = btnNovoClick
+    end
+    object btnAlterar: TBitBtn
+      Left = 109
+      Top = 16
+      Width = 75
+      Height = 25
+      Caption = '&Alterar'
+      TabOrder = 4
+      OnClick = btnAlterarClick
+    end
+    object btnApagar: TBitBtn
+      Left = 352
+      Top = 16
+      Width = 75
+      Height = 25
+      Caption = 'Apaga&r'
+      TabOrder = 5
+      OnClick = btnApagarClick
+    end
+    object btnNavigator: TDBNavigator
+      Left = 436
+      Top = 16
+      Width = 220
+      Height = 25
+      DataSource = dsListagem
+      VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast]
+      TabOrder = 6
+    end
+  end
+  object pcHerancaPrincipal: TPageControl
+    Left = 0
+    Top = 0
+    Width = 949
+    Height = 520
+    ActivePage = tbsListagem
+    Align = alClient
+    TabOrder = 1
+    ExplicitWidth = 938
+    ExplicitHeight = 519
+    object tbsListagem: TTabSheet
+      Caption = 'Listagem'
+      object pnlTopo: TPanel
+        Left = 0
+        Top = 0
+        Width = 941
+        Height = 73
+        Align = alTop
+        TabOrder = 0
+        ExplicitWidth = 930
+        object lblIndice: TLabel
+          Left = 24
+          Top = 5
+          Width = 104
+          Height = 15
+          Caption = 'Campo de Pesquisa'
+        end
+        object mskPesquisar: TMaskEdit
+          Left = 24
+          Top = 26
+          Width = 385
+          Height = 23
+          TabOrder = 0
+          Text = ''
+          TextHint = 'Digite aqui o que deseja pesquisar'
+        end
+        object btnPesquisar: TBitBtn
+          Left = 432
+          Top = 24
+          Width = 137
+          Height = 25
+          Caption = '&Pesquisar'
+          TabOrder = 1
+        end
+      end
+      object grdListagem: TDBGrid
+        Left = 0
+        Top = 73
+        Width = 941
+        Height = 417
+        Align = alClient
+        DataSource = dsListagem
+        TabOrder = 1
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -12
+        TitleFont.Name = 'Segoe UI'
+        TitleFont.Style = []
+      end
+    end
+    object tbsMovimentacao: TTabSheet
+      Caption = 'Movimenta'#231#227'o'
+      ImageIndex = 1
+    end
+  end
+  object qryListagem: TZQuery
+    Params = <>
+    Left = 824
+    Top = 64
+  end
+  object dsListagem: TDataSource
+    Left = 896
+    Top = 64
+  end
+end

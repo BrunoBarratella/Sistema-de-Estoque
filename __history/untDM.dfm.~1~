@@ -1,0 +1,16 @@
+object DataModule1: TDataModule1
+  Height = 480
+  Width = 640
+  object dbConexao: TZConnection
+    ControlsCodePage = cCP_UTF16
+    Catalog = ''
+    HostName = ''
+    Port = 0
+    Database = ''
+    User = ''
+    Password = ''
+    Protocol = ''
+    Left = 304
+    Top = 224
+  end
+end

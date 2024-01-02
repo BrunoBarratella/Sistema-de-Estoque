@@ -1,0 +1,18 @@
+program TreinoVendas;
+
+uses
+  Vcl.Forms,
+  untPrincipal in 'untPrincipal.pas' {frmPrincipal},
+  untCadHeranca in 'Heranca\untCadHeranca.pas' {frmCadHeranca},
+  untDM in 'untDM.pas' {DM: TDataModule},
+  untCadCategoria in 'Cadastro\untCadCategoria.pas' {frmCadHeranca1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmCadHeranca1, frmCadHeranca1);
+  Application.Run;
+end.
