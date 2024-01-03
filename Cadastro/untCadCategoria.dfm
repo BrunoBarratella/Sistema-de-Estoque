@@ -5,10 +5,10 @@ inherited frmCadCategoria: TfrmCadCategoria
   TextHeight = 15
   inherited pnlRodape: TPanel
     Width = 951
-    ExplicitWidth = 945
+    ExplicitWidth = 947
     inherited btnFechar: TBitBtn
-      Left = 853
-      ExplicitLeft = 847
+      Left = 845
+      ExplicitLeft = 841
     end
     inherited btnNavigator: TDBNavigator
       Hints.Strings = ()
@@ -16,12 +16,12 @@ inherited frmCadCategoria: TfrmCadCategoria
   end
   inherited pcHerancaPrincipal: TPageControl
     Width = 951
-    ExplicitWidth = 945
+    ExplicitWidth = 947
     inherited tbsListagem: TTabSheet
       ExplicitWidth = 943
       inherited pnlTopo: TPanel
         Width = 943
-        ExplicitWidth = 937
+        ExplicitWidth = 939
       end
       inherited grdListagem: TDBGrid
         Width = 943

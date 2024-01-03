@@ -1,0 +1,39 @@
+unit classCadCategoria;
+
+interface
+
+uses  System.Classes,
+      Vcl.Controls,
+      Vcl.ExtCtrls,
+      Vcl.Dialogs;
+
+type
+  TClassCadCategoria = class
+  private
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+
+  published
+
+  end;
+
+
+implementation
+
+
+{ TClassCadCategoria }
+
+constructor TClassCadCategoria.Create;
+begin
+  ShowMessage('Fui Criado!');
+end;
+
+destructor TClassCadCategoria.Destroy;
+begin
+  ShowMessage('Fui Destruído!');
+  inherited;
+end;
+
+end.

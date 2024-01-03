@@ -27,7 +27,7 @@ object frmCadHeranca: TfrmCadHeranca
       949
       57)
     object btnFechar: TBitBtn
-      Left = 847
+      Left = 839
       Top = 16
       Width = 75
       Height = 25
@@ -62,7 +62,7 @@ object frmCadHeranca: TfrmCadHeranca
         4E6E244E6E244E6E244E6E244E6E244E6E244E6E244E6EFF00FF}
       TabOrder = 0
       OnClick = btnFecharClick
-      ExplicitLeft = 843
+      ExplicitLeft = 835
     end
     object btnGravar: TBitBtn
       Left = 271
@@ -261,7 +261,7 @@ object frmCadHeranca: TfrmCadHeranca
     Top = 0
     Width = 949
     Height = 520
-    ActivePage = tbsMovimentacao
+    ActivePage = tbsListagem
     Align = alClient
     TabOrder = 1
     ExplicitWidth = 945
@@ -355,6 +355,7 @@ object frmCadHeranca: TfrmCadHeranca
         TitleFont.Height = -12
         TitleFont.Name = 'Segoe UI'
         TitleFont.Style = []
+        OnDblClick = grdListagemDblClick
         OnTitleClick = grdListagemTitleClick
       end
     end
@@ -369,6 +370,7 @@ object frmCadHeranca: TfrmCadHeranca
         EditLabel.Width = 95
         EditLabel.Height = 15
         EditLabel.Caption = 'C'#243'd. de Categoria'
+        Enabled = False
         MaxLength = 10
         TabOrder = 0
         Text = ''

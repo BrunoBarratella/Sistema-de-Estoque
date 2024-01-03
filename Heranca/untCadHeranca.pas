@@ -42,19 +42,20 @@ type
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure grdListagemTitleClick(Column: TColumn);
     procedure mskPesquisarChange(Sender: TObject);
+    procedure grdListagemDblClick(Sender: TObject);
   private
-    EstadoBotao: TEstadoDoCadastro;
-
     procedure ControlaBotoes (btnNovo, btnAlterar, btnCancelar, btnGravar, btnApagar: TBitBtn; btnNavigator: TDBNavigator;
                                              pcHerancaPrincipal: TPageControl; Flag: Boolean);
     procedure ControlaIndiceTab (pcHerancaPrincipal: TPageControl; Indice: Integer);
     function
      RetornaCampoTraduzido (Campo :string): string;
   public
+    EstadoBotao: TEstadoDoCadastro;
     IndiceAtual: String;
-    function Excluir:Boolean; virtual;
+    function Apagar:Boolean; virtual;
     function Gravar(EstadoBotao:TEstadoDoCadastro):Boolean; virtual;
     function ExisteCampoObrigatorio: Boolean;
+    procedure LimpaEdits;
   end;
 
 var
@@ -98,7 +99,7 @@ begin
 
 end;
 
-function TfrmCadHeranca.Excluir: Boolean;
+function TfrmCadHeranca.Apagar: Boolean;
 begin
   ShowMessage('Deletado');
   Result := True;
@@ -134,11 +135,23 @@ begin
 
 end;
 
+procedure TfrmCadHeranca.LimpaEdits;
+var i:Integer;
+begin
+  for I := 0 to ComponentCount-1 do begin
+    if(Components[i] is TLabeledEdit) then
+      TLabeledEdit(Components[i]).Text := ''
+    else if (Components[i] is TEdit) then
+      TEdit(Components[i]).Text := '';
+  end;
+end;
+
 // --------------------------------------------------------------------------------------------------------------------------------------------
 
 procedure TfrmCadHeranca.btnNovoClick(Sender: TObject);
 begin
   ControlaBotoes(btnNovo, btnAlterar, btnCancelar, btnGravar, btnApagar, btnNavigator, pcHerancaPrincipal, false);
+  LimpaEdits;
 
   EstadoBotao := ecNovo;
 end;
@@ -155,6 +168,7 @@ begin
   ControlaBotoes(btnNovo, btnAlterar, btnCancelar, btnGravar, btnApagar, btnNavigator, pcHerancaPrincipal, true);
 
   ControlaIndiceTab(pcHerancaPrincipal, 0);
+  LimpaEdits;
 
   EstadoBotao := ecNenhum;
 end;
@@ -168,6 +182,8 @@ begin
     if Gravar(EstadoBotao) then begin
       ControlaBotoes(btnNovo, btnAlterar, btnCancelar, btnGravar, btnApagar, btnNavigator, pcHerancaPrincipal, true);
       ControlaIndiceTab(pcHerancaPrincipal, 0);
+      LimpaEdits;
+      qryListagem.Refresh;
     end;
   finally
     EstadoBotao := ecNenhum;
@@ -176,10 +192,12 @@ end;
 
 procedure TfrmCadHeranca.btnApagarClick(Sender: TObject);
 begin
-  if Excluir then begin
+  if Apagar then begin
     ControlaBotoes(btnNovo, btnAlterar, btnCancelar, btnGravar, btnApagar, btnNavigator, pcHerancaPrincipal, true);
     ControlaIndiceTab(pcHerancaPrincipal, 0);
+    LimpaEdits;
     EstadoBotao := ecNenhum;
+    qryListagem.Refresh;
   end;
 end;
 
@@ -194,6 +212,11 @@ begin
   dsListagem.DataSet      := qryListagem;
   grdListagem.DataSource  := dsListagem;
   btnNavigator.DataSource := dsListagem;
+end;
+
+procedure TfrmCadHeranca.grdListagemDblClick(Sender: TObject);
+begin
+  btnAlterar.Click;
 end;
 
 procedure TfrmCadHeranca.grdListagemTitleClick(Column: TColumn);

@@ -1,0 +1,66 @@
+unit classCadCategoria;
+
+interface
+
+uses  System.Classes,
+      Vcl.Controls,
+      Vcl.ExtCtrls,
+      Vcl.Dialogs;
+
+type
+  TClassCadCategoria = class
+  private
+    fieldCategoriaID: Integer;
+    fieldDescricao: String;
+    function getCodigo: Integer;
+    function getDescricao: String;
+    procedure setCodigo(const Value: Integer);
+    procedure setDescricao(const Value: String);
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+
+  published
+     property codigo:Integer read getCodigo write setCodigo;
+     property descricao:String read getDescricao write setDescricao;
+  end;
+
+
+implementation
+
+
+{ TClassCadCategoria }
+
+constructor TClassCadCategoria.Create;
+begin
+  ShowMessage('Fui Criado!');
+end;
+
+destructor TClassCadCategoria.Destroy;
+begin
+  ShowMessage('Fui Destruído!');
+  inherited;
+end;
+
+function TClassCadCategoria.getCodigo: Integer;
+begin
+  Result :=
+end;
+
+function TClassCadCategoria.getDescricao: String;
+begin
+
+end;
+
+procedure TClassCadCategoria.setCodigo(const Value: Integer);
+begin
+
+end;
+
+procedure TClassCadCategoria.setDescricao(const Value: String);
+begin
+
+end;
+
+end.

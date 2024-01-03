@@ -6,7 +6,8 @@ uses
   untCadHeranca in 'Heranca\untCadHeranca.pas' {frmCadHeranca},
   untDM in 'untDM.pas' {DM: TDataModule},
   untCadCategoria in 'Cadastro\untCadCategoria.pas' {frmCadCategoria},
-  untEnum in 'Heranca\untEnum.pas';
+  untEnum in 'Heranca\untEnum.pas',
+  classCadCategoria in 'Classes\classCadCategoria.pas';
 
 {$R *.res}
 

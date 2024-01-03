@@ -118,6 +118,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Heranca\untEnum.pas"/>
+        <DCCReference Include="Classes\classCadCategoria.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

@@ -7,8 +7,8 @@
     <Transaction>2023/12/27 16:46:34.000.055,C:\Bruno\Projetos\Curso\TreinoCurso1\untPrincipal.dfm=C:\Users\Bruno Barratella\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
     <Transaction>2023/12/27 16:46:47.000.100,C:\Bruno\Projetos\Curso\TreinoCurso1\TreinoVendas.dproj=C:\Users\Bruno Barratella\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2023/12/27 16:52:04.000.126,=C:\Bruno\Projetos\Curso\TreinoCurso1\Unit1.pas</Transaction>
-    <Transaction>2023/12/27 17:00:26.000.908,C:\Bruno\Projetos\Curso\TreinoCurso1\Heranca\untCadHeranca.pas=C:\Bruno\Projetos\Curso\TreinoCurso1\Unit1.pas</Transaction>
     <Transaction>2023/12/27 17:00:26.000.908,C:\Bruno\Projetos\Curso\TreinoCurso1\Heranca\untCadHeranca.dfm=C:\Bruno\Projetos\Curso\TreinoCurso1\Unit1.dfm</Transaction>
+    <Transaction>2023/12/27 17:00:26.000.908,C:\Bruno\Projetos\Curso\TreinoCurso1\Heranca\untCadHeranca.pas=C:\Bruno\Projetos\Curso\TreinoCurso1\Unit1.pas</Transaction>
     <Transaction>2023/12/27 17:57:47.000.271,=C:\Bruno\Projetos\Curso\TreinoCurso1\Unit2.pas</Transaction>
     <Transaction>2023/12/27 17:58:01.000.766,=C:\Bruno\Projetos\Curso\TreinoCurso1\Unit1.pas</Transaction>
     <Transaction>2023/12/27 17:58:32.000.168,C:\Bruno\Projetos\Curso\TreinoCurso1\untDM.dfm=C:\Bruno\Projetos\Curso\TreinoCurso1\Unit1.dfm</Transaction>
@@ -18,5 +18,7 @@
     <Transaction>2023/12/27 18:27:53.000.556,C:\Bruno\Projetos\Curso\TreinoCurso1\Cadastro\untCadCategoria.pas=C:\Bruno\Projetos\Curso\TreinoCurso1\Unit1.pas</Transaction>
     <Transaction>2023/12/29 09:00:00.000.400,=C:\Bruno\Projetos\Curso\TreinoCurso1\Unit1.pas</Transaction>
     <Transaction>2023/12/29 09:01:03.000.168,C:\Bruno\Projetos\Curso\TreinoCurso1\Unit1.pas=C:\Bruno\Projetos\Curso\TreinoCurso1\Heranca\untEnum.pas</Transaction>
+    <Transaction>2024/01/02 16:02:30.000.677,=C:\Bruno\Projetos\Curso\TreinoCurso1\Unit1.pas</Transaction>
+    <Transaction>2024/01/02 16:03:01.000.726,C:\Bruno\Projetos\Curso\TreinoCurso1\Unit1.pas=C:\Bruno\Projetos\Curso\TreinoCurso1\Classes\classCadCategoria.pas</Transaction>
   </Transactions>
 </BorlandProject>
