@@ -69,9 +69,7 @@ begin
     abort;
   end;
 
-
   inherited;
-
 end;
 
 procedure TfrmCadCategoria.btnGravarClick(Sender: TObject);

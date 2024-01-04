@@ -40,6 +40,9 @@ implementation
 
 {$R *.dfm}
 
+{
+  Procedimentos, para mostrar minha tela de cadastro de categoria
+}
 procedure TfrmPrincipal.Categoria1Click(Sender: TObject);
 begin
   frmCadCategoria := TfrmCadCategoria.Create(Self);
@@ -52,6 +55,10 @@ begin
   Close;
 end;
 
+{
+  Passo os valores a serem recebido no meu componente de conexão com a DB
+    para garantir que ao criar meu formulario sejam todos passados de forma correta
+}
 procedure TfrmPrincipal.FormCreate(Sender: TObject);
 begin
   DM := TDM.Create(self);

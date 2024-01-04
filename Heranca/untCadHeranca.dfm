@@ -2,8 +2,8 @@ object frmCadHeranca: TfrmCadHeranca
   Left = 0
   Top = 0
   Caption = 'Insira aqui o Titulo'
-  ClientHeight = 577
-  ClientWidth = 949
+  ClientHeight = 576
+  ClientWidth = 945
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,18 +16,16 @@ object frmCadHeranca: TfrmCadHeranca
   TextHeight = 15
   object pnlRodape: TPanel
     Left = 0
-    Top = 520
-    Width = 949
+    Top = 519
+    Width = 945
     Height = 57
     Align = alBottom
     TabOrder = 0
-    ExplicitTop = 519
-    ExplicitWidth = 945
     DesignSize = (
-      949
+      945
       57)
     object btnFechar: TBitBtn
-      Left = 839
+      Left = 831
       Top = 16
       Width = 75
       Height = 25
@@ -62,7 +60,6 @@ object frmCadHeranca: TfrmCadHeranca
         4E6E244E6E244E6E244E6E244E6E244E6E244E6E244E6EFF00FF}
       TabOrder = 0
       OnClick = btnFecharClick
-      ExplicitLeft = 835
     end
     object btnGravar: TBitBtn
       Left = 271
@@ -259,13 +256,11 @@ object frmCadHeranca: TfrmCadHeranca
   object pcHerancaPrincipal: TPageControl
     Left = 0
     Top = 0
-    Width = 949
-    Height = 520
+    Width = 945
+    Height = 519
     ActivePage = tbsListagem
     Align = alClient
     TabOrder = 1
-    ExplicitWidth = 945
-    ExplicitHeight = 519
     object tbsListagem: TTabSheet
       Caption = 'Listagem'
       object pnlTopo: TPanel

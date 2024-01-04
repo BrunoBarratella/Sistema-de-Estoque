@@ -61,6 +61,7 @@ function TClassCadCategoria.Gravar: Boolean;
 var qryInserir: TZQuery;
 begin
   try
+    Result := True;
     qryInserir := TZQuery.Create(nil);
     qryInserir.Connection := ConexaoDB;
     qryInserir.SQL.Clear;

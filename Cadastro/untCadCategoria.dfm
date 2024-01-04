@@ -1,14 +1,16 @@
 inherited frmCadCategoria: TfrmCadCategoria
   Caption = 'Cadastro de Categoria'
+  ClientHeight = 577
   ClientWidth = 951
   ExplicitWidth = 963
   TextHeight = 15
   inherited pnlRodape: TPanel
+    Top = 520
     Width = 951
-    ExplicitWidth = 947
+    ExplicitWidth = 951
     inherited btnFechar: TBitBtn
-      Left = 845
-      ExplicitLeft = 841
+      Left = 841
+      ExplicitLeft = 837
     end
     inherited btnNavigator: TDBNavigator
       Hints.Strings = ()
@@ -16,9 +18,11 @@ inherited frmCadCategoria: TfrmCadCategoria
   end
   inherited pcHerancaPrincipal: TPageControl
     Width = 951
-    ExplicitWidth = 947
+    Height = 520
+    ExplicitWidth = 951
     inherited tbsListagem: TTabSheet
       ExplicitWidth = 943
+      ExplicitHeight = 489
       inherited pnlTopo: TPanel
         Width = 943
         ExplicitWidth = 939
@@ -42,6 +46,7 @@ inherited frmCadCategoria: TfrmCadCategoria
     end
     inherited tbsMovimentacao: TTabSheet
       ExplicitWidth = 943
+      ExplicitHeight = 489
     end
   end
   inherited qryListagem: TZQuery
